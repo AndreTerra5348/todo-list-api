@@ -8,6 +8,5 @@ namespace TodoList.Core.Repositories
     {
         Task<IEnumerable<User>> GetAllWithTodosAsync();
         Task<User> GetWithTodosByIdAsync(int id);
-        Task<IEnumerable<User>> GetAllWithTodosByUserIdAsync(int userId);
     }
 }
