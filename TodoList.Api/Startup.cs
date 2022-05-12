@@ -6,11 +6,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using TodoList.Core;
+using TodoList.Data;
 
 namespace TodoList.Api
 {
@@ -28,6 +31,13 @@ namespace TodoList.Api
         {
 
             services.AddControllers();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddDbContext<TodoListDbContext>(opt =>
+                opt.UseSqlServer(Configuration.GetConnectionString("TodoListConnStr"),
+                    x => x.MigrationsAssembly("TodoList.Data")));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoList.Api", Version = "v1" });
