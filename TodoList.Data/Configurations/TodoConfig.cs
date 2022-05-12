@@ -16,6 +16,10 @@ namespace TodoList.Data.Configurations
                 .IsRequired()
                 .HasMaxLength(200);
 
+            builder.Property(t => t.IsDone)
+                .IsRequired()
+                .HasDefaultValue(false);
+
             builder.HasOne(t => t.User)
                 .WithMany(u => u.Todos)
                 .HasForeignKey(t => t.UserId);

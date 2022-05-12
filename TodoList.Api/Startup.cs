@@ -41,6 +41,8 @@ namespace TodoList.Api
                 opt.UseSqlServer(Configuration.GetConnectionString("TodoListConnStr"),
                     x => x.MigrationsAssembly("TodoList.Data")));
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoList.Api", Version = "v1" });

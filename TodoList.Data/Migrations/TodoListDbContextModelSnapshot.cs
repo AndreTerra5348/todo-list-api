@@ -26,7 +26,9 @@ namespace TodoList.Data.Migrations
                         .UseIdentityColumn();
 
                     b.Property<bool>("IsDone")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Title")
                         .IsRequired()

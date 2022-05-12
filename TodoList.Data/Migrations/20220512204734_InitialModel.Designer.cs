@@ -9,8 +9,8 @@ using TodoList.Data;
 namespace TodoList.Data.Migrations
 {
     [DbContext(typeof(TodoListDbContext))]
-    [Migration("20220512172103_SeedTodosAndUsersTable")]
-    partial class SeedTodosAndUsersTable
+    [Migration("20220512204734_InitialModel")]
+    partial class InitialModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,7 +28,9 @@ namespace TodoList.Data.Migrations
                         .UseIdentityColumn();
 
                     b.Property<bool>("IsDone")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Title")
                         .IsRequired()
