@@ -9,6 +9,7 @@ namespace TodoList.Api.Profiles
         public TodoListProfile()
         {
             CreateMap<Todo, TodoReadDto>();
+            CreateMap<TodoCreateDto, Todo>();
         }
     }
 }

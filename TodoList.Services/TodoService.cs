@@ -43,11 +43,11 @@ namespace TodoList.Services
             return await _unitOfWork.Todos.GetAllWithUserByUserIdAsync(id);
         }
 
-        public async Task UpdateAsync(Todo updatedTodo, Todo todo)
+        public async Task UpdateAsync(Todo todo, Todo updatedTodo)
         {
-            updatedTodo.IsDone = todo.IsDone;
-            updatedTodo.Title = todo.Title;
-            updatedTodo.UserId = todo.UserId;
+            todo.IsDone = updatedTodo.IsDone;
+            todo.Title = updatedTodo.Title;
+            todo.UserId = updatedTodo.UserId;
 
             await _unitOfWork.CommitAsync();
         }
