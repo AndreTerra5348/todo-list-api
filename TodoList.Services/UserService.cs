@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TodoList.Core;
-using TodoList.Core.ervices;
+using TodoList.Core.Services;
 using TodoList.Core.Models;
 
 namespace TodoList.Services

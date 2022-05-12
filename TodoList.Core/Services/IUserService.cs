@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TodoList.Core.Models;
 
-namespace TodoList.Core.ervices
+namespace TodoList.Core.Services
 {
     public interface IUserService
     {

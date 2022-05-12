@@ -13,7 +13,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using TodoList.Core;
+using TodoList.Core.Services;
 using TodoList.Data;
+using TodoList.Services;
 
 namespace TodoList.Api
 {
@@ -33,6 +35,8 @@ namespace TodoList.Api
             services.AddControllers();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<ITodoService, TodoService>();
+            services.AddTransient<IUserService, UserService>();
 
             services.AddDbContext<TodoListDbContext>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("TodoListConnStr"),
