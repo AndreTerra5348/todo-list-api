@@ -31,8 +31,8 @@ namespace TodoList.Api.Controllers
             return Ok(todoReadDtos);
         }
 
-        [HttpGet("{id}", Name = "GetTodo")]
-        public async Task<ActionResult<TodoReadDto>> Get(int id)
+        [HttpGet("{id}", Name = "GetTodoById")]
+        public async Task<ActionResult<TodoReadDto>> GetTodoById(int id)
         {
             var todo = await _todoService.GetByIdAsync(id);
             if (todo == null)
@@ -69,7 +69,7 @@ namespace TodoList.Api.Controllers
             var newTodo = await _todoService.GetByIdAsync(todo.Id);
 
             var todoReadDto = _mapper.Map<TodoReadDto>(newTodo);
-            return CreatedAtRoute("GetTodo", new { id = todoReadDto.Id }, todoReadDto);
+            return CreatedAtRoute(nameof(GetTodoById), new { id = todoReadDto.Id }, todoReadDto);
         }
 
         [HttpPut("{id}")]
@@ -92,10 +92,7 @@ namespace TodoList.Api.Controllers
             var updatedTodo = _mapper.Map<Todo>(todoCreateDto);
             await _todoService.UpdateAsync(todo, updatedTodo);
 
-            var newTodo = await _todoService.GetByIdAsync(id);
-
-            var todoReadDto = _mapper.Map<TodoReadDto>(newTodo);
-            return Ok(todoReadDto);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]

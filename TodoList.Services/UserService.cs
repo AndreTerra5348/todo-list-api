@@ -38,9 +38,9 @@ namespace TodoList.Services
             return await _unitOfWork.Users.GetByIdAsync(id);
         }
 
-        public async Task UpdateAsync(User updatedUser, User user)
+        public async Task UpdateAsync(User user, User updatedUser)
         {
-            updatedUser.Name = user.Name;
+            user.Name = updatedUser.Name;
             await _unitOfWork.CommitAsync();
         }
     }

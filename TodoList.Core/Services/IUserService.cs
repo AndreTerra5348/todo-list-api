@@ -9,7 +9,7 @@ namespace TodoList.Core.Services
         Task<IEnumerable<User>> GetAllAsync();
         Task<User> GetByIdAsync(int id);
         Task<User> CreateAsync(User user);
-        Task UpdateAsync(User updatedUser, User user);
+        Task UpdateAsync(User user, User updatedUser);
         Task DeleteAsync(User user);
     }
 }
