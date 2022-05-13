@@ -15,7 +15,7 @@ using Microsoft.OpenApi.Models;
 using TodoList.Core;
 using TodoList.Core.Services;
 using TodoList.Data;
-using TodoList.Services;
+using TodoList.Service;
 
 namespace TodoList.Api
 {

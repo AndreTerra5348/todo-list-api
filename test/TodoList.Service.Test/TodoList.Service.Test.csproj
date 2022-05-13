@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TodoList.Services\TodoList.Services.csproj" />
+    <ProjectReference Include="..\..\src\TodoList.Service\TodoList.Service.csproj" />
   </ItemGroup>
 
 </Project>

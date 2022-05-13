@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Core", "src\TodoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Data", "src\TodoList.Data\TodoList.Data.csproj", "{BC7C26B6-6AD6-41FC-9280-5C96420CF381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Services", "src\TodoList.Services\TodoList.Services.csproj", "{E7A4013E-CFC5-4E61-99F1-847641FCC8A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Service", "src\TodoList.Service\TodoList.Service.csproj", "{E7A4013E-CFC5-4E61-99F1-847641FCC8A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9673DC34-3844-4D77-A14F-5FA5A53939B3}"
 EndProject
