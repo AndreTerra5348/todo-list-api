@@ -31,7 +31,7 @@ Implementations related with business logic
 Implementations related with api
 - Controllers: uses injected services to access business logic.
 - Dto for create and read operations
-- AutoMapper profile to map Dto to models and vice versa
+- AutoMapper profile to map Dtos to models and vice versa
 - FluentValidation to validate Dtos
 - uses MSSQL Server for Development and Production environments
 
@@ -40,11 +40,10 @@ Unit Test Api projects
 - Unit tests for controllers with xUnit, Moq and FluentAssertions.
 - Uses a pattern to group Moq setups for a specific service.
 
-
 ## TODO
 - [ ] Add unit tests for controllers
-    - [x] Todo Controller
-    - [ ] User Controller
+    - [x] Todos Controller
+    - [ ] Users Controller
 - [ ] Change Database to Azure SQL
 - [ ] Add Azure pipelines (CI/CD)
 - [ ] Deploy to Azure
@@ -71,6 +70,7 @@ Unit Test Api projects
 
 ### Running the Application
 
+1. Clone this repository
 ```bash 
 git clone https://github.com/AndreTerra5348/todo-list-api
 ```
@@ -79,9 +79,14 @@ git clone https://github.com/AndreTerra5348/todo-list-api
 setx SQLCONNSTR_TodoListConnStr "Server=localhost,1433;Initial Catalog=todolistdb;User Id=sa;Password=<password>;"
 ```
 
+2. Restore packages
 ```bash
 cd todo-list-api
 dotnet restore
+```
+
+3. Run the application
+```bash
 cd src\TodoList.Api\
 dotnet run
 ```
