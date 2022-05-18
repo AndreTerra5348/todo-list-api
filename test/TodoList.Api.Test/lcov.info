@@ -1,0 +1,961 @@
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Program.cs
+FN:14,System.Void TodoList.Api.Program::Main(System.String[])
+FNDA:0,System.Void TodoList.Api.Program::Main(System.String[])
+DA:15,0
+DA:16,0
+DA:17,0
+FN:19,Microsoft.Extensions.Hosting.IHostBuilder TodoList.Api.Program::CreateHostBuilder(System.String[])
+FNDA:0,Microsoft.Extensions.Hosting.IHostBuilder TodoList.Api.Program::CreateHostBuilder(System.String[])
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Startup.cs
+FN:23,Microsoft.Extensions.Configuration.IConfiguration TodoList.Api.Startup::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration TodoList.Api.Startup::get_Configuration()
+DA:24,0
+FN:31,System.Void TodoList.Api.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void TodoList.Api.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:32,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+FN:52,System.Void TodoList.Api.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+FNDA:0,System.Void TodoList.Api.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:63,0
+DA:65,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+BRDA:54,9,0,0
+BRDA:54,9,1,0
+FN:25,System.Void TodoList.Api.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void TodoList.Api.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+LF:34
+LH:0
+BRF:2
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Validators\TodoCreateDtoValidator.cs
+FN:7,System.Void TodoList.Api.Validators.TodoCreateDtoValidator::.ctor()
+FNDA:7,System.Void TodoList.Api.Validators.TodoCreateDtoValidator::.ctor()
+DA:8,7
+DA:9,7
+DA:10,7
+DA:11,7
+DA:12,7
+DA:14,7
+DA:15,7
+DA:17,7
+LF:8
+LH:8
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Validators\UserCreateDtoValidator.cs
+FN:7,System.Void TodoList.Api.Validators.UserCreateDtoValidator::.ctor()
+FNDA:0,System.Void TodoList.Api.Validators.UserCreateDtoValidator::.ctor()
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Profiles\TodoListProfile.cs
+FN:8,System.Void TodoList.Api.Profiles.TodoListProfile::.ctor()
+FNDA:17,System.Void TodoList.Api.Profiles.TodoListProfile::.ctor()
+DA:9,17
+DA:10,17
+DA:11,17
+DA:12,17
+DA:14,17
+DA:15,17
+DA:16,17
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:1
+FNH:1
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Dtos\TodoCreateDto.cs
+FN:4,System.String TodoList.Api.Dtos.TodoCreateDto::get_Title()
+FNDA:16,System.String TodoList.Api.Dtos.TodoCreateDto::get_Title()
+DA:5,16
+FN:5,System.Boolean TodoList.Api.Dtos.TodoCreateDto::get_IsDone()
+FNDA:9,System.Boolean TodoList.Api.Dtos.TodoCreateDto::get_IsDone()
+DA:6,9
+FN:6,System.Int32 TodoList.Api.Dtos.TodoCreateDto::get_UserId()
+FNDA:16,System.Int32 TodoList.Api.Dtos.TodoCreateDto::get_UserId()
+DA:7,16
+LF:3
+LH:3
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Dtos\TodoReadDto.cs
+FN:4,System.Int32 TodoList.Api.Dtos.TodoReadDto::get_Id()
+FNDA:11,System.Int32 TodoList.Api.Dtos.TodoReadDto::get_Id()
+DA:5,11
+FN:5,System.String TodoList.Api.Dtos.TodoReadDto::get_Title()
+FNDA:9,System.String TodoList.Api.Dtos.TodoReadDto::get_Title()
+DA:6,9
+FN:6,System.Boolean TodoList.Api.Dtos.TodoReadDto::get_IsDone()
+FNDA:9,System.Boolean TodoList.Api.Dtos.TodoReadDto::get_IsDone()
+DA:7,9
+FN:7,System.Int32 TodoList.Api.Dtos.TodoReadDto::get_UserId()
+FNDA:9,System.Int32 TodoList.Api.Dtos.TodoReadDto::get_UserId()
+DA:8,9
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Dtos\UserCreateDto.cs
+FN:4,System.String TodoList.Api.Dtos.UserCreateDto::get_Name()
+FNDA:0,System.String TodoList.Api.Dtos.UserCreateDto::get_Name()
+DA:5,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Dtos\UserReadDto.cs
+FN:4,System.Int32 TodoList.Api.Dtos.UserReadDto::get_Id()
+FNDA:0,System.Int32 TodoList.Api.Dtos.UserReadDto::get_Id()
+DA:5,0
+FN:5,System.String TodoList.Api.Dtos.UserReadDto::get_Name()
+FNDA:0,System.String TodoList.Api.Dtos.UserReadDto::get_Name()
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Controllers\TodosController.cs
+FN:19,System.Void TodoList.Api.Controllers.TodosController::.ctor(TodoList.Core.Services.ITodoService,AutoMapper.IMapper)
+FNDA:17,System.Void TodoList.Api.Controllers.TodosController::.ctor(TodoList.Core.Services.ITodoService,AutoMapper.IMapper)
+DA:20,17
+DA:21,17
+DA:22,17
+DA:23,17
+DA:24,17
+FN:27,System.Void TodoList.Api.Controllers.TodosController/<Get>d__3::MoveNext()
+FNDA:2,System.Void TodoList.Api.Controllers.TodosController/<Get>d__3::MoveNext()
+DA:28,2
+DA:29,2
+DA:30,2
+DA:31,2
+DA:32,2
+FN:35,System.Void TodoList.Api.Controllers.TodosController/<GetTodoById>d__4::MoveNext()
+FNDA:3,System.Void TodoList.Api.Controllers.TodosController/<GetTodoById>d__4::MoveNext()
+DA:36,3
+DA:37,3
+DA:38,3
+DA:39,2
+DA:40,2
+DA:43,1
+DA:44,1
+DA:45,3
+BRDA:38,164,0,2
+BRDA:38,164,1,1
+FN:48,System.Void TodoList.Api.Controllers.TodosController/<GetByUserId>d__5::MoveNext()
+FNDA:2,System.Void TodoList.Api.Controllers.TodosController/<GetByUserId>d__5::MoveNext()
+DA:49,2
+DA:50,2
+DA:51,2
+DA:52,2
+DA:53,2
+FN:56,System.Void TodoList.Api.Controllers.TodosController/<Create>d__6::MoveNext()
+FNDA:3,System.Void TodoList.Api.Controllers.TodosController/<Create>d__6::MoveNext()
+DA:57,3
+DA:58,3
+DA:59,3
+DA:61,3
+DA:62,1
+DA:63,1
+DA:66,2
+DA:67,2
+DA:69,2
+DA:71,2
+DA:72,2
+DA:73,3
+BRDA:61,210,0,1
+BRDA:61,210,1,2
+FN:76,System.Void TodoList.Api.Controllers.TodosController/<Update>d__7::MoveNext()
+FNDA:4,System.Void TodoList.Api.Controllers.TodosController/<Update>d__7::MoveNext()
+DA:77,4
+DA:78,4
+DA:79,4
+DA:81,4
+DA:82,1
+DA:83,1
+DA:86,3
+DA:87,3
+DA:88,1
+DA:89,1
+DA:92,2
+DA:93,2
+DA:95,2
+DA:96,4
+BRDA:81,210,0,1
+BRDA:81,210,1,3
+BRDA:87,399,0,1
+BRDA:87,399,1,2
+FN:99,System.Void TodoList.Api.Controllers.TodosController/<Delete>d__8::MoveNext()
+FNDA:3,System.Void TodoList.Api.Controllers.TodosController/<Delete>d__8::MoveNext()
+DA:100,3
+DA:101,3
+DA:102,3
+DA:103,1
+DA:104,1
+DA:107,2
+DA:108,2
+DA:109,3
+BRDA:102,175,0,1
+BRDA:102,175,1,2
+LF:57
+LH:57
+BRF:10
+BRH:10
+FNF:7
+FNH:7
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Api\Controllers\UserController.cs
+FN:18,System.Void TodoList.Api.Controllers.UserController::.ctor(TodoList.Core.Services.IUserService,AutoMapper.IMapper)
+FNDA:0,System.Void TodoList.Api.Controllers.UserController::.ctor(TodoList.Core.Services.IUserService,AutoMapper.IMapper)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:26,System.Void TodoList.Api.Controllers.UserController/<Get>d__3::MoveNext()
+FNDA:0,System.Void TodoList.Api.Controllers.UserController/<Get>d__3::MoveNext()
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+FN:34,System.Void TodoList.Api.Controllers.UserController/<GetUserById>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Api.Controllers.UserController/<GetUserById>d__4::MoveNext()
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:44,0
+BRDA:37,164,0,0
+BRDA:37,164,1,0
+FN:47,System.Void TodoList.Api.Controllers.UserController/<Create>d__5::MoveNext()
+FNDA:0,System.Void TodoList.Api.Controllers.UserController/<Create>d__5::MoveNext()
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:62,0
+DA:64,0
+DA:65,0
+BRDA:52,210,0,0
+BRDA:52,210,1,0
+FN:68,System.Void TodoList.Api.Controllers.UserController/<Update>d__6::MoveNext()
+FNDA:0,System.Void TodoList.Api.Controllers.UserController/<Update>d__6::MoveNext()
+DA:69,0
+DA:70,0
+DA:71,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:84,0
+DA:86,0
+DA:88,0
+DA:89,0
+BRDA:73,210,0,0
+BRDA:73,210,1,0
+BRDA:79,394,0,0
+BRDA:79,394,1,0
+FN:92,System.Void TodoList.Api.Controllers.UserController/<Delete>d__7::MoveNext()
+FNDA:0,System.Void TodoList.Api.Controllers.UserController/<Delete>d__7::MoveNext()
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:100,0
+DA:101,0
+DA:102,0
+BRDA:95,175,0,0
+BRDA:95,175,1,0
+LF:52
+LH:0
+BRF:10
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Core\Models\Todo.cs
+FN:4,System.Int32 TodoList.Core.Models.Todo::get_Id()
+FNDA:16,System.Int32 TodoList.Core.Models.Todo::get_Id()
+DA:5,16
+FN:5,System.String TodoList.Core.Models.Todo::get_Title()
+FNDA:13,System.String TodoList.Core.Models.Todo::get_Title()
+DA:6,13
+FN:6,System.Boolean TodoList.Core.Models.Todo::get_IsDone()
+FNDA:13,System.Boolean TodoList.Core.Models.Todo::get_IsDone()
+DA:7,13
+FN:7,System.Int32 TodoList.Core.Models.Todo::get_UserId()
+FNDA:17,System.Int32 TodoList.Core.Models.Todo::get_UserId()
+DA:8,17
+FN:8,TodoList.Core.Models.User TodoList.Core.Models.Todo::get_User()
+FNDA:0,TodoList.Core.Models.User TodoList.Core.Models.Todo::get_User()
+DA:9,0
+LF:5
+LH:4
+BRF:0
+BRH:0
+FNF:5
+FNH:4
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Core\Models\User.cs
+FN:7,System.Int32 TodoList.Core.Models.User::get_Id()
+FNDA:0,System.Int32 TodoList.Core.Models.User::get_Id()
+DA:8,0
+FN:8,System.String TodoList.Core.Models.User::get_Name()
+FNDA:0,System.String TodoList.Core.Models.User::get_Name()
+DA:9,0
+FN:9,System.Collections.Generic.ICollection`1<TodoList.Core.Models.Todo> TodoList.Core.Models.User::get_Todos()
+FNDA:0,System.Collections.Generic.ICollection`1<TodoList.Core.Models.Todo> TodoList.Core.Models.User::get_Todos()
+DA:10,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\TodoListDbContext.cs
+FN:8,Microsoft.EntityFrameworkCore.DbSet`1<TodoList.Core.Models.Todo> TodoList.Data.TodoListDbContext::get_Todos()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<TodoList.Core.Models.Todo> TodoList.Data.TodoListDbContext::get_Todos()
+DA:9,0
+FN:9,Microsoft.EntityFrameworkCore.DbSet`1<TodoList.Core.Models.User> TodoList.Data.TodoListDbContext::get_Users()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<TodoList.Core.Models.User> TodoList.Data.TodoListDbContext::get_Users()
+DA:10,0
+FN:17,System.Void TodoList.Data.TodoListDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void TodoList.Data.TodoListDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:12,System.Void TodoList.Data.TodoListDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TodoList.Data.TodoListDbContext>)
+FNDA:0,System.Void TodoList.Data.TodoListDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TodoList.Data.TodoListDbContext>)
+DA:13,0
+DA:14,0
+DA:15,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\UnitOfWork.cs
+FN:14,TodoList.Core.Repositories.IUserRepository TodoList.Data.UnitOfWork::get_Users()
+FNDA:0,TodoList.Core.Repositories.IUserRepository TodoList.Data.UnitOfWork::get_Users()
+DA:15,0
+BRDA:15,7,0,0
+BRDA:15,7,1,0
+FN:16,TodoList.Core.Repositories.ITodoRepository TodoList.Data.UnitOfWork::get_Todos()
+FNDA:0,TodoList.Core.Repositories.ITodoRepository TodoList.Data.UnitOfWork::get_Todos()
+DA:17,0
+BRDA:17,7,0,0
+BRDA:17,7,1,0
+FN:24,System.Threading.Tasks.Task`1<System.Int32> TodoList.Data.UnitOfWork::CommitAsync()
+FNDA:0,System.Threading.Tasks.Task`1<System.Int32> TodoList.Data.UnitOfWork::CommitAsync()
+DA:25,0
+DA:26,0
+DA:27,0
+FN:29,System.Void TodoList.Data.UnitOfWork::Dispose()
+FNDA:0,System.Void TodoList.Data.UnitOfWork::Dispose()
+DA:30,0
+DA:31,0
+DA:32,0
+FN:18,System.Void TodoList.Data.UnitOfWork::.ctor(TodoList.Data.TodoListDbContext)
+FNDA:0,System.Void TodoList.Data.UnitOfWork::.ctor(TodoList.Data.TodoListDbContext)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:12
+LH:0
+BRF:4
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Repositories\Repository.cs
+FN:9,Microsoft.EntityFrameworkCore.DbContext TodoList.Data.Repositories.Repository`1::get_Context()
+FNDA:0,Microsoft.EntityFrameworkCore.DbContext TodoList.Data.Repositories.Repository`1::get_Context()
+DA:10,0
+FN:22,System.Void TodoList.Data.Repositories.Repository`1::Delete(T)
+FNDA:0,System.Void TodoList.Data.Repositories.Repository`1::Delete(T)
+DA:23,0
+DA:24,0
+DA:25,0
+FN:11,System.Void TodoList.Data.Repositories.Repository`1::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+FNDA:0,System.Void TodoList.Data.Repositories.Repository`1::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void TodoList.Data.Repositories.Repository`1/<CreateAsync>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.Repository`1/<CreateAsync>d__4::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+FN:27,System.Void TodoList.Data.Repositories.Repository`1/<GetAllAsync>d__6::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.Repository`1/<GetAllAsync>d__6::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+FN:32,System.Void TodoList.Data.Repositories.Repository`1/<GetByIdAsync>d__7::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.Repository`1/<GetByIdAsync>d__7::MoveNext()
+DA:33,0
+DA:34,0
+DA:35,0
+LF:17
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Repositories\TodoRepository.cs
+FN:13,TodoList.Data.TodoListDbContext TodoList.Data.Repositories.TodoRepository::get_Context()
+FNDA:0,TodoList.Data.TodoListDbContext TodoList.Data.Repositories.TodoRepository::get_Context()
+DA:14,0
+FN:16,System.Void TodoList.Data.Repositories.TodoRepository::.ctor(TodoList.Data.TodoListDbContext)
+FNDA:0,System.Void TodoList.Data.Repositories.TodoRepository::.ctor(TodoList.Data.TodoListDbContext)
+DA:17,0
+DA:18,0
+DA:19,0
+FN:21,System.Void TodoList.Data.Repositories.TodoRepository/<GetAllWithUserAsync>d__3::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.TodoRepository/<GetAllWithUserAsync>d__3::MoveNext()
+DA:22,0
+DA:23,0
+DA:24,0
+FN:26,System.Void TodoList.Data.Repositories.TodoRepository/<GetAllWithUserByUserIdAsync>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.TodoRepository/<GetAllWithUserByUserIdAsync>d__4::MoveNext()
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+FN:33,System.Void TodoList.Data.Repositories.TodoRepository/<GetWithUserByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.TodoRepository/<GetWithUserByIdAsync>d__5::MoveNext()
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+LF:16
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Repositories\UserRepository.cs
+FN:13,TodoList.Data.TodoListDbContext TodoList.Data.Repositories.UserRepository::get_Context()
+FNDA:0,TodoList.Data.TodoListDbContext TodoList.Data.Repositories.UserRepository::get_Context()
+DA:14,0
+FN:16,System.Void TodoList.Data.Repositories.UserRepository::.ctor(TodoList.Data.TodoListDbContext)
+FNDA:0,System.Void TodoList.Data.Repositories.UserRepository::.ctor(TodoList.Data.TodoListDbContext)
+DA:17,0
+DA:18,0
+DA:19,0
+FN:21,System.Void TodoList.Data.Repositories.UserRepository/<GetAllWithTodosAsync>d__3::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.UserRepository/<GetAllWithTodosAsync>d__3::MoveNext()
+DA:22,0
+DA:23,0
+DA:24,0
+FN:26,System.Void TodoList.Data.Repositories.UserRepository/<GetWithTodosByIdAsync>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Data.Repositories.UserRepository/<GetWithTodosByIdAsync>d__4::MoveNext()
+DA:27,0
+DA:28,0
+DA:29,0
+LF:10
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Migrations\20220512204734_InitialModel.cs
+FN:7,System.Void TodoList.Data.Migrations.InitialModel::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.InitialModel::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+FN:19,System.Void TodoList.Data.Migrations.InitialModel::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.InitialModel::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+LF:20
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Migrations\20220512204734_InitialModel.Designer.cs
+FN:15,System.Void TodoList.Data.Migrations.InitialModel::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.InitialModel::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+LF:62
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Migrations\20220512204758_SeedUsersAndTodos.cs
+FN:7,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:8,0
+DA:9,0
+DA:10,0
+DA:12,0
+DA:13,0
+DA:14,0
+FN:16,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Migrations\20220512204758_SeedUsersAndTodos.Designer.cs
+FN:15,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.SeedUsersAndTodos::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+LF:62
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Migrations\TodoListDbContextModelSnapshot.cs
+FN:13,System.Void TodoList.Data.Migrations.TodoListDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void TodoList.Data.Migrations.TodoListDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:81,0
+LF:62
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Configurations\TodoConfig.cs
+FN:8,System.Void TodoList.Data.Configurations.TodoConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TodoList.Core.Models.Todo>)
+FNDA:0,System.Void TodoList.Data.Configurations.TodoConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TodoList.Core.Models.Todo>)
+DA:9,0
+DA:10,0
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:27,0
+DA:28,0
+LF:15
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Data\Configurations\UserConfig.cs
+FN:9,System.Void TodoList.Data.Configurations.UserConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TodoList.Core.Models.User>)
+FNDA:0,System.Void TodoList.Data.Configurations.UserConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<TodoList.Core.Models.User>)
+DA:10,0
+DA:11,0
+DA:13,0
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:20,0
+DA:21,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Service\TodoService.cs
+FN:12,System.Void TodoList.Service.TodoService::.ctor(TodoList.Core.IUnitOfWork)
+FNDA:0,System.Void TodoList.Service.TodoService::.ctor(TodoList.Core.IUnitOfWork)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+FN:18,System.Void TodoList.Service.TodoService/<CreateAsync>d__2::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<CreateAsync>d__2::MoveNext()
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:25,System.Void TodoList.Service.TodoService/<DeleteAsync>d__3::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<DeleteAsync>d__3::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+FN:31,System.Void TodoList.Service.TodoService/<GetAllWithUserAsync>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<GetAllWithUserAsync>d__4::MoveNext()
+DA:32,0
+DA:33,0
+DA:34,0
+FN:36,System.Void TodoList.Service.TodoService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<GetByIdAsync>d__5::MoveNext()
+DA:37,0
+DA:38,0
+DA:39,0
+FN:41,System.Void TodoList.Service.TodoService/<GetByUserIdAsync>d__6::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<GetByUserIdAsync>d__6::MoveNext()
+DA:42,0
+DA:43,0
+DA:44,0
+FN:46,System.Void TodoList.Service.TodoService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void TodoList.Service.TodoService/<UpdateAsync>d__7::MoveNext()
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+LF:28
+LH:0
+BRF:0
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:c:\Users\andan\source\repos\todo-list-api\src\TodoList.Service\UserService.cs
+FN:12,System.Void TodoList.Service.UserService::.ctor(TodoList.Core.IUnitOfWork)
+FNDA:0,System.Void TodoList.Service.UserService::.ctor(TodoList.Core.IUnitOfWork)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+FN:18,System.Void TodoList.Service.UserService/<CreateAsync>d__2::MoveNext()
+FNDA:0,System.Void TodoList.Service.UserService/<CreateAsync>d__2::MoveNext()
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:25,System.Void TodoList.Service.UserService/<DeleteAsync>d__3::MoveNext()
+FNDA:0,System.Void TodoList.Service.UserService/<DeleteAsync>d__3::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+FN:31,System.Void TodoList.Service.UserService/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void TodoList.Service.UserService/<GetAllAsync>d__4::MoveNext()
+DA:32,0
+DA:33,0
+DA:34,0
+FN:36,System.Void TodoList.Service.UserService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void TodoList.Service.UserService/<GetByIdAsync>d__5::MoveNext()
+DA:37,0
+DA:38,0
+DA:39,0
+FN:41,System.Void TodoList.Service.UserService/<UpdateAsync>d__6::MoveNext()
+FNDA:0,System.Void TodoList.Service.UserService/<UpdateAsync>d__6::MoveNext()
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+LF:23
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
