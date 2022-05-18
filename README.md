@@ -75,17 +75,18 @@ Unit Test Api projects
 git clone https://github.com/AndreTerra5348/todo-list-api
 ```
 
+2. Set local environment variables containing MSSQL Connection String
 ```bash
 setx SQLCONNSTR_TodoListConnStr "Server=localhost,1433;Initial Catalog=todolistdb;User Id=sa;Password=<password>;"
 ```
 
-2. Restore packages
+3. Restore packages
 ```bash
 cd todo-list-api
 dotnet restore
 ```
 
-3. Run the application
+4. Run the application
 ```bash
 cd src\TodoList.Api\
 dotnet run
