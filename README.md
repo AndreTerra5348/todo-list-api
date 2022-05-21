@@ -1,12 +1,14 @@
 # To-do List Api
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue")](https://www.linkedin.com/in/andr%C3%A9-terra-2a7728145/)
-![](https://github.com/AndreTerra5348/todo-list-api/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)
+
+
+[![Build Test and Deploy](https://github.com/AndreTerra5348/todo-list-api/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)](https://github.com/AndreTerra5348/todo-list-api/actions/workflows/azure-webapps-dotnet-core.yml)
 
 ## Introduction
-This is a simple multi-layer monolithic api made with Dotnet to manage Users and To-do lists, with test projects
+This is a simple multi-layer monolithic api made with Dotnet and Azure Services to manage Users and To-do lists.
 
-I made this project to learn more about Dotnet, Asp.Net Core, Entity Framework, xUnit for testing, Unit of Work pattern, and multi layer archtecture for apis.
+I made this project to learn more about Dotnet, Asp.Net Core, Entity Framework, Unit of Work pattern, multi layer archtecture, xUnit, Github Actions for build, test and deploy, Azure App Service, SQL Server and Managed Identities
 
 ## Description Breakdown:
 ### Core Layer 
@@ -42,10 +44,8 @@ Unit Test Api projects
 - Uses a pattern to group Moq setups for a specific service.
 
 ## TODO
-- [ ] Add unit tests for controllers
-    - [x] TodosController
-    - [ ] UsersController
-- [x] Change Database to Azure SQL
+- [x] Add unit tests
+- [x] Change Database to Azure SQL Server
 - [x] Add ~~Azure pipelines~~ Github Actions for Build, Test and Deploy (CI/CD)
 - [x] Deploy to Azure
 
@@ -61,6 +61,7 @@ Unit Test Api projects
 - MSSQL Server
 - xUnit
 - Moq
+- Azure Services (App Service, SQL Server, Managed Identities)
 
 ## Getting Started
 
