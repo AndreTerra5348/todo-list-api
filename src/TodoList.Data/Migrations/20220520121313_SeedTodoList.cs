@@ -2,7 +2,7 @@
 
 namespace TodoList.Data.Migrations
 {
-    public partial class SeedUsersAndTodos : Migration
+    public partial class SeedTodoList : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -1,3 +1,4 @@
 {
     "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info",
+    "appService.defaultWebAppToDeploy": "/subscriptions/f8b51aad-df48-40f0-a171-767a7bd3e55c/resourceGroups/examples/providers/Microsoft.Web/sites/todo-list-api5",
 }

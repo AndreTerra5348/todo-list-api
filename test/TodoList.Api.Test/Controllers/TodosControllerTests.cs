@@ -316,13 +316,13 @@ namespace TodoList.Api.Test
         }
 
         [Theory]
-        [InlineData(1, "Test", false, 1)]
-        public async void Delete_CallDeleteAsync_OnlyOnce(int todoId, string title, bool isDone, int userId)
+        [InlineData(1)]
+        public async void Delete_CallDeleteAsync_OnlyOnce(int todoId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
                 .MockDeleteAsync()
-                .MockGetByIdAsync(new Todo() { Id = todoId, UserId = userId });
+                .MockGetByIdAsync(new Todo() { Id = todoId });
 
             var sut = new TodosController(mockTodoService.Object, _mapper);
 
@@ -334,13 +334,13 @@ namespace TodoList.Api.Test
         }
 
         [Theory]
-        [InlineData(1, "Test", false, 1)]
-        public async void Delete_CallDeleteAsync_ReturnNoContent(int todoId, string title, bool isDone, int userId)
+        [InlineData(1)]
+        public async void Delete_CallDeleteAsync_ReturnNoContent(int todoId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
                 .MockDeleteAsync()
-                .MockGetByIdAsync(new Todo() { Id = todoId, UserId = userId });
+                .MockGetByIdAsync(new Todo() { Id = todoId });
 
             var sut = new TodosController(mockTodoService.Object, _mapper);
 

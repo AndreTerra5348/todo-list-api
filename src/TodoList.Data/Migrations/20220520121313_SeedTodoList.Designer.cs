@@ -9,8 +9,8 @@ using TodoList.Data;
 namespace TodoList.Data.Migrations
 {
     [DbContext(typeof(TodoListDbContext))]
-    [Migration("20220512204758_SeedUsersAndTodos")]
-    partial class SeedUsersAndTodos
+    [Migration("20220520121313_SeedTodoList")]
+    partial class SeedTodoList
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

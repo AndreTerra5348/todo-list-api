@@ -38,7 +38,7 @@ namespace TodoList.Api
             services.AddTransient<IUserService, UserService>();
 
             services.AddDbContext<TodoListDbContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("TodoListConnStr"),
+                opt.UseSqlServer(Configuration.GetConnectionString("azureconstr"),
                     x => x.MigrationsAssembly("TodoList.Data")));
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
