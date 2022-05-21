@@ -17,12 +17,12 @@
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
 
-name: Build and deploy ASP.Net Core app to an Azure Web App
+name: Build Test and Deploy
 
 env:
   AZURE_WEBAPP_NAME: todo-list-api5 # set this to the name of your Azure Web App
   AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: "5.0.404" # set this to the .NET Core version to use
+  DOTNET_VERSION: "6.0.100" # set this to the .NET Core version to use
 
 on:
   push:
@@ -53,8 +53,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Build with dotnet
+      - name: dotnet build
         run: dotnet build --configuration Release
+
+      - name: dotnet test
+        run: dotnet test --no-restore --verbosity normal
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp

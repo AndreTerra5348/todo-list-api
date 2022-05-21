@@ -2,6 +2,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue")](https://www.linkedin.com/in/andr%C3%A9-terra-2a7728145/)
 
+
+![](https://github.com/AndreTerra5348/todo-list-api/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)
+
 ## Introduction
 This is a simple multi-layer monolithic api made with Dotnet to manage Users and To-do lists, with test projects
 
@@ -44,9 +47,9 @@ Unit Test Api projects
 - [ ] Add unit tests for controllers
     - [x] TodosController
     - [ ] UsersController
-- [ ] Change Database to Azure SQL
+- [x] Change Database to Azure SQL
 - [x] Add ~~Azure pipelines~~ Github Actions for Build, Test and Deploy (CI/CD)
-- [ ] Deploy to Azure
+- [x] Deploy to Azure
 
 
 ## Built with
