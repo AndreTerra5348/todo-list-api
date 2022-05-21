@@ -1,8 +1,6 @@
 # To-do List Api
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue")](https://www.linkedin.com/in/andr%C3%A9-terra-2a7728145/)
-
-
 ![](https://github.com/AndreTerra5348/todo-list-api/actions/workflows/azure-webapps-dotnet-core.yml/badge.svg)
 
 ## Introduction
@@ -69,7 +67,7 @@ Unit Test Api projects
 ### Prerequisites
 
 - .Net Core 5.0
-- MSSQL Server
+- Azure Account
 
 ### Running the Application
 
@@ -78,10 +76,7 @@ Unit Test Api projects
 git clone https://github.com/AndreTerra5348/todo-list-api
 ```
 
-2. Set local environment variables containing MSSQL Connection String
-```bash
-setx SQLCONNSTR_TodoListConnStr "Server=localhost,1433;Initial Catalog=todolistdb;User Id=sa;Password=<password>;"
-```
+2. Configure Azure App Service to connect to the SQL Server [Following this steps](https://docs.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database?tabs=vscode%2Cefcore%2Cdotnetcore)
 
 3. Restore packages
 ```bash
@@ -101,6 +96,8 @@ dotnet run
 - [Macoratti Unit Of Work Article](https://www.macoratti.net/16/01/net_uow1.htm)
 - [Martin Fowler Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html)
 - [Microsoft Docs Unit Test](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-5.0)
+- [Azure App Service and SQL Database](https://docs.microsoft.com/en-us/azure/app-service/tutorial-dotnetcore-sqldb-app?tabs=azure-portal%2Cvisual-studio-code-deploy%2Cdeploy-instructions-azure-portal%2Cvisual-studio-code-logs%2Cazure-portal-resources)
+- [Azure Managed Identity](https://docs.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database?tabs=vscode%2Cefcore%2Cdotnetcore)
 
 ## License
 Distributed under the MIT License. See LICENSE.txt for more information.
