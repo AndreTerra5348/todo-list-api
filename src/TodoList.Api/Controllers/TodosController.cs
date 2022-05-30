@@ -64,9 +64,10 @@ namespace TodoList.Api.Controllers
             }
 
             var todo = _mapper.Map<Todo>(todoCreateDto);
-            await _todoService.CreateAsync(todo);
 
-            var newTodo = await _todoService.GetByIdAsync(todo.Id);
+            var createdTodo = await _todoService.CreateAsync(todo);
+
+            var newTodo = await _todoService.GetByIdAsync(createdTodo.Id);
 
             var todoReadDto = _mapper.Map<TodoReadDto>(newTodo);
             return CreatedAtRoute(nameof(GetTodoById), new { id = todoReadDto.Id }, todoReadDto);

@@ -30,8 +30,8 @@ namespace TodoList.Api.Controllers
             return Ok(userReadDtos);
         }
 
-        [HttpGet("{id}", Name = "GetUserById")]
-        public async Task<ActionResult<UserReadDto>> GetUserById(int id)
+        [HttpGet("{id}", Name = "GetById")]
+        public async Task<ActionResult<UserReadDto>> GetById(int id)
         {
             var user = await _userService.GetByIdAsync(id);
             if (user == null)
@@ -55,13 +55,14 @@ namespace TodoList.Api.Controllers
             }
 
             var user = _mapper.Map<User>(userCreateDto);
-            await _userService.CreateAsync(user);
 
-            var newUser = await _userService.GetByIdAsync(user.Id);
+            var createdUser = await _userService.CreateAsync(user);
+
+            var newUser = await _userService.GetByIdAsync(createdUser.Id);
 
             var userReadDto = _mapper.Map<UserReadDto>(newUser);
 
-            return CreatedAtRoute(nameof(GetUserById), new { id = userReadDto.Id }, userReadDto);
+            return CreatedAtRoute(nameof(GetById), new { id = userReadDto.Id }, userReadDto);
         }
 
         [HttpPut("{id}")]

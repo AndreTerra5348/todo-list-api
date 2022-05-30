@@ -45,6 +45,8 @@ Unit Test Api projects
 
 ## TODO
 - [x] Add unit tests
+    - [x] UserController tests
+    - [x] TodosController tests
 - [x] Change Database to Azure SQL Server
 - [x] Add ~~Azure pipelines~~ Github Actions for Build, Test and Deploy (CI/CD)
 - [x] Deploy to Azure

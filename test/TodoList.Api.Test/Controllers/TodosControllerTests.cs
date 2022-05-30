@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +9,9 @@ using TodoList.Api.Dtos;
 using TodoList.Api.Profiles;
 using TodoList.Api.Test.MockServices;
 using TodoList.Core.Models;
-using TodoList.Core.Services;
 using Xunit;
 
-namespace TodoList.Api.Test
+namespace TodoList.Api.Test.Controllers
 {
     public class TodosControllerTests
     {
@@ -43,7 +40,7 @@ namespace TodoList.Api.Test
 
         [Theory]
         [InlineData(1, "Test", false, 1)]
-        public async void Get_CallGetAllWithUserAsync_ReturnOkWithTodoReadDtoListWithCorrectValues(int todoId, string title, bool isDone, int userId)
+        public async void Get_CallGetAllWithUserAsync_ReturnOkWith_TodoReadDtoList_WithCorrectValues(int todoId, string title, bool isDone, int userId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
@@ -64,10 +61,7 @@ namespace TodoList.Api.Test
             var okResult = result.Result.Should().BeOfType<OkObjectResult>().Subject;
             var todos = okResult.Value.Should().BeAssignableTo<List<TodoReadDto>>().Subject;
             todos.Should().HaveCount(1);
-            todos[0].Id.Should().Be(todoId);
-            todos[0].Title.Should().Be(title);
-            todos[0].IsDone.Should().Be(isDone);
-            todos[0].UserId.Should().Be(userId);
+            todos.Should().Contain(t => t.Id == todoId && t.Title == title && t.IsDone == isDone && t.UserId == userId);
         }
 
         [Theory]
@@ -90,7 +84,7 @@ namespace TodoList.Api.Test
 
         [Theory]
         [InlineData(1, "Test", false, 1)]
-        public async void GetTodoById_CallGetByIdAsync_ReturnOkWithTodoReadDtoWithCorrectValues(int todoId, string title, bool isDone, int userId)
+        public async void GetTodoById_CallGetByIdAsync_ReturnOk_WithTodoReadDto_WithCorrectValues(int todoId, string title, bool isDone, int userId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
@@ -152,7 +146,7 @@ namespace TodoList.Api.Test
 
         [Theory]
         [InlineData(1, "Test", false, 1)]
-        public async void GetByUserId_CallGetByUserIdAsync_ReturnOkWithTodoReadDtoWithCorrectValues(int todoId, string title, bool isDone, int userId)
+        public async void GetByUserId_CallGetByUserIdAsync_ReturnOk_WithTodoReadDto_WithCorrectValues(int todoId, string title, bool isDone, int userId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
@@ -184,7 +178,7 @@ namespace TodoList.Api.Test
         {
             //Arrange
             var mockTodoService = new MockTodoService()
-                .MockCreateAsync(null)
+                .MockCreateAsync(new Todo() { Id = todoId })
                 .MockGetByIdAsync(new Todo() { Id = todoId });
 
             var sut = new TodosController(mockTodoService.Object, _mapper);
@@ -198,11 +192,17 @@ namespace TodoList.Api.Test
 
         [Theory]
         [InlineData(1, "Test", false, 1)]
-        public async void Create_CallCreateAsync_ReturnOkWithTodoReadDtoWithCorrectValues(int todoId, string title, bool isDone, int userId)
+        public async void Create_CallCreateAsync_ReturnOk_WithTodoReadDto_WithCorrectValues(int todoId, string title, bool isDone, int userId)
         {
             //Arrange
             var mockTodoService = new MockTodoService()
-                .MockCreateAsync(null)
+                .MockCreateAsync(new Todo()
+                {
+                    Id = todoId,
+                    Title = title,
+                    IsDone = isDone,
+                    UserId = userId
+                })
                 .MockGetByIdAsync(new Todo()
                 {
                     Id = todoId,
